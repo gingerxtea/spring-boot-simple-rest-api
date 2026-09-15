@@ -22,6 +22,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/postgres
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: postgres
+      BPL_JVM_THREAD_COUNT: 50
     ports:
       - "8080:8080"
     networks:
