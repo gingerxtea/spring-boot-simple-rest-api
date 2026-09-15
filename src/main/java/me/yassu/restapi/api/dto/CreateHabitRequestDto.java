@@ -1,12 +1,10 @@
 package me.yassu.restapi.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
-public record UpdateHabitRequestDto(
-		@NotNull Long habitId,
+public record CreateHabitRequestDto(
 		@NotBlank String habitName,
 		String habitDescription,
-		@NotBlank String updatedBy
+		@NotBlank String createdBy
 ) {
 }
