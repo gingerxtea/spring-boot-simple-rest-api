@@ -27,6 +27,7 @@ services:
 
   nginx:
     image: nginx:1.30.4-alpine3.24
+    container_name: nginx-app
     ports:
       - "80:80"
       - "443:443"
@@ -41,4 +42,6 @@ services:
 
 networks:
   backend:
+    - name: backend-network
   frontend:
+    - name: frontend-network
