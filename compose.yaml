@@ -42,6 +42,4 @@ services:
 
 networks:
   backend:
-    - name: backend-network
   frontend:
-    - name: frontend-network
